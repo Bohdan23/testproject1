@@ -1,0 +1,73 @@
+@import "../helpers/variables.scss";
+@import "../helpers/fonts.scss";
+
+.header {
+	border: 1px solid red;
+	position: relative;
+	height: 760px;
+	overflow: hidden;
+}
+
+/*Slider*/
+.swiper-container {
+	height: 760px;
+	.swiper-wrapper {
+		height: inherit;
+		.swiper-slide {
+			height: inherit;
+			position: relative;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+	.swiper-button-prev {
+		background: url('../img/icons/arrow-l.png');
+		background-size: cover;
+		left: 3%;
+	}
+	.swiper-button-next {
+		background: url('../img/icons/arrow-r.png');
+		background-size: cover;
+		right: 3%;
+	}
+	.swiper-pagination-bullets {
+		bottom: 5%;
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			margin: 0 8px;
+			background: #fff;
+		}
+		.swiper-pagination-bullet-active {
+			background: #74c7d5;
+		}
+	}
+	.slider-text {
+		position: absolute;
+	    z-index: 1;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    color: #74c7d5;
+	    display: flex;
+        background: rgba(255,255,255,.3);
+    	padding: 15px;
+    	border-radius: 5px;
+	    &__thin {
+	    	font: 46px latolight;
+	    	width: 290px;
+	    	line-height: 45px;
+	    	text-align: right;
+	    	margin-right: 10px;
+	    }
+	    &__bold {
+	    	font: 106px latoblack;
+	    	line-height: 82px;
+	    }
+	}
+}
+/*Slider*/
