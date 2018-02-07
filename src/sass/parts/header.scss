@@ -6,11 +6,35 @@
 	position: relative;
 	height: 760px;
 	overflow: hidden;
+	@include m(1200) {
+		height: 650px;
+	}
+	@include m(924) {
+		height: 560px;
+	}
+	@include m(768) {
+		height: 485px;
+	}
+	@include m(480) {
+		height: 420px;
+	}
 }
 
 /*Slider*/
 .swiper-container {
 	height: 760px;
+	@include m(1200) {
+		height: 650px;
+	}
+	@include m(924) {
+		height: 560px;
+	}
+	@include m(768) {
+		height: 485px;
+	}
+	@include m(480) {
+		height: 420px;
+	}
 	.swiper-wrapper {
 		height: inherit;
 		.swiper-slide {
@@ -34,13 +58,62 @@
 		background-size: cover;
 		right: 3%;
 	}
+	@include m(924) {
+		.swiper-button-next, .swiper-button-prev {
+				width: 21px;
+				height: 35px;
+				margin-top: -17.5px;
+		}
+		.swiper-button-next {
+			right: 2.5%;
+		}
+		.swiper-button-prev {
+			left: 2.5%;
+		}
+	}
+	@include m(768) {
+		.swiper-button-next, .swiper-button-prev {
+			width: 16px;
+			height: 26px;
+			margin-top: -13px;
+		}
+	}
+	@include m(480) {
+		.swiper-button-next, .swiper-button-prev {
+			width: 13px;
+			height: 21px;
+			margin-top: -10.5px;
+		}
+	}
 	.swiper-pagination-bullets {
 		bottom: 5%;
+		@include m(924) {
+			bottom: 3%;
+		}
 		.swiper-pagination-bullet {
 			width: 12px;
 			height: 12px;
 			margin: 0 8px;
 			background: #fff;
+			@include m(1200) {
+				width: 11px;
+				height: 11px;
+				margin: 0 7px;
+			}
+			@include m(924) {
+				width: 10px;
+				height: 10px;
+				margin: 0 5px;
+			}
+			@include m(768) {
+				width: 8px;
+				height: 8px;
+			}
+			@include m(480) {
+				width: 7px;
+				height: 7px;
+				margin: 0 4px;
+			}
 		}
 		.swiper-pagination-bullet-active {
 			background: #74c7d5;
@@ -57,16 +130,54 @@
         background: rgba(255,255,255,.3);
     	padding: 15px;
     	border-radius: 5px;
+    	@include m(768) {
+			padding: 10px;
+		}
 	    &__thin {
 	    	font: 46px latolight;
 	    	width: 290px;
 	    	line-height: 45px;
 	    	text-align: right;
 	    	margin-right: 10px;
+	    	@include m(1200) {
+				width: 240px;
+				font-size: 38px;
+				line-height: 1;
+			}
+			@include m(924) {
+				font-size: 27px;
+				width: 167px;
+			}
+			@include m(768) {
+				font-size: 22px;
+				width: 139px;
+			}
+			@include m(480) {
+				font-size: 15px;
+				width: 93px;
+				margin-right: 7px;
+			}
 	    }
 	    &__bold {
 	    	font: 106px latoblack;
 	    	line-height: 82px;
+	    	@include m(1200) {
+				font-size: 87px;
+				line-height: 70px;
+			}
+			@include m(924) {
+				font-size: 63px;
+				line-height: 48px;
+				margin-right: 5px;
+			}
+			@include m(768) {
+				font-size: 56px;
+				line-height: 41px;
+			}
+			@include m(480) {
+				font-size: 34px;
+				line-height: 27px;
+			}
 	    }
 	}
 }
