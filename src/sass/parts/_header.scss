@@ -13,12 +13,10 @@
 		height: 560px;
 	}
 	@include m(768) {
-		/*height: 485px;*/
 		height: 100vh;
 		max-height: 600px;
 	}
 	@include m(480) {
-		/*height: 420px;*/
 		height: 100vh;
 		max-height: 550px;		
 	}
@@ -35,27 +33,17 @@
 	}
 	@include m(768) {
 		height: 100vh;
-		max-height: 700px;
-		min-height: 380px;
-	}
-	@include m(480) {
-		height: 100vh;
-		max-height: 700px;
+		max-height: 600px;
 		min-height: 380px;
 	}
 	.swiper-wrapper {
 		height: inherit;
 		.swiper-slide {
-			height: inherit;
+			height: 100%;
 			position: relative;
 			@include m(768) {
 				height: 100vh;
-				max-height: 700px;
-				min-height: 380px;
-			}
-			@include m(480) {
-				height: 100vh;
-				max-height: 700px;
+				max-height: 600px;
 				min-height: 380px;
 			}
 			img {

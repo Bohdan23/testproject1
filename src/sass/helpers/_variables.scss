@@ -16,6 +16,12 @@ $footer-bg: #68a097;
     }
 }
 
+@mixin mn($media) {
+    @media only screen and (min-width: $media+'px') {
+        @content;
+    }
+}
+
 @mixin placeholder {
     &::-webkit-input-placeholder {
         @content;

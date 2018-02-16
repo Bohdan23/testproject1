@@ -103,9 +103,43 @@
 			width: 42px;
 			height: 42px;
 		}
+		@include mn(768) {
+			&.facebook {
+				&:hover {
+					background-color: #4267b2;
+				}
+			}
+			&.twitter {
+				&:hover {
+					background-color: #1da1f2;
+				}
+			}
+			&.g-plus {
+				&:hover {
+					background-color: rgba(229,57,53,1);
+				}
+			}
+			&.linkedin {
+				&:hover {
+					background-color: #2672ae;
+				}
+			}
+		}
 		@include m(768) {
 			width: 37px;
 			height: 37px;
+			&.facebook {
+				background-color: #4267b2;
+			}
+			&.twitter {
+				background-color: #1da1f2;
+			}
+			&.g-plus {
+				background-color: rgba(229,57,53,1);
+			}
+			&.linkedin {
+				background-color: #2672ae;
+			}
 		}
 	}
 }

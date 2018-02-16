@@ -44,9 +44,7 @@ $(document).ready(function () {
     // Modal window
 
 
-    $('.nav__menu').on('click', 'a', function(e){
-		e.preventDefault();
-
+    $('.nav__menu').on('click', 'a', function(){
 		var idSection = $(this).attr('href'),
 			topOfSection = $(idSection).offset().top;
 
@@ -76,5 +74,8 @@ $(document).ready(function () {
     });
     // End MixItUp jquery plugin
 
-    new WOW().init();
+    wow = new WOW({
+        mobile: false
+    })
+    wow.init();
 });
