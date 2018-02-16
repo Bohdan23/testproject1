@@ -185,24 +185,45 @@ $footer-bg: #68a097;
 
 .fadeInRight {
   animation-name: fadeInRight;
+  @include m(768) {
+    animation-name: none;
+  }
 }
 .fadeInLeft {
   animation-name: fadeInLeft;
+  @include m(768) {
+    animation-name: none;
+  }
 }
 .fadeInDown {
   animation-name: fadeInDown;
+  @include m(768) {
+    animation-name: none;
+  }
 }
 .fadeIn {
   animation-name: fadeIn;
+  @include m(768) {
+    animation-name: none;
+  }
 }
 .bounceInRight {
   animation-name: bounceInRight;
+  @include m(768) {
+    animation-name: none;
+  }
 }
 .bounceInLeft {
   animation-name: bounceInLeft;
+  @include m(768) {
+    animation-name: none;
+  }
 }
 .bounceInDown {
   animation-name: bounceInDown;
+  @include m(768) {
+    animation-name: none;
+  }
 }
 /*ANIMATIONS*/
 

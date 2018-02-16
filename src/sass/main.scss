@@ -76,7 +76,7 @@ a {
 		}	
 		li {
 			@include m(768) {
-				margin: 0 3px;
+				margin: 0 4px;
 			}
 			a {
 				font: 16px latoregular;
@@ -148,7 +148,7 @@ a {
 					padding: 0 13px 10px 13px;
 				}
 				@include m(768) {
-					padding: 0 13px;
+					padding: 5px 13px;
 					align-items: center;
 					&::after, &::before {
 						height: 2px;
@@ -157,10 +157,10 @@ a {
 					}
 					&::after {
 						top: auto;
-						bottom: -5px;
+						bottom: 0;
 					}
 					&::before {
-						top: -5px;
+						top: 0;
 					}
 					&.active {
 						&::after, &::before {
@@ -177,7 +177,7 @@ a {
 				}
 				@include m(480) {
 					font-size: 12px;
-					padding: 0 8px;
+					padding: 5px 8px;
 				}
 			}
 		}
