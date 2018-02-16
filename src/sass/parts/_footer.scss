@@ -1,0 +1,111 @@
+@import "../helpers/_variables.scss";
+@import "../helpers/_fonts.scss";
+.wrapper {
+	position: relative;
+	background: #fff;
+	z-index: 10;
+	box-shadow: 0 0 10px rgba(0,0,0,.5)
+}
+.footer {
+	width: 100%;
+	height: 130px;
+	background: #68a097;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	@include m(1200) {
+		height: 115px;
+	}
+	@include m(1080) {
+		height: 105px;
+	}
+	@include m(768) {
+		height: 90px;
+	}
+	&-nav {
+		width: 100%;
+		height: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include m(1200) {
+			max-width: 275px;
+		}
+		@include m(1080) {
+			max-width: 260px;
+		}
+		@include m(768) {
+			max-width: 200px
+		}
+	}
+	a {
+		display: block;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #82c8bd;
+		transition: background-color .25s ease;
+		&.facebook {
+			background-image: url('../img/icons/facebook.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 22%;
+			&:hover {
+				background-color: #4267b2;
+			}
+		}
+		&.twitter {
+			background-image: url('../img/icons/twitter.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 45%;
+			&:hover {
+				background-color: #1da1f2;
+			}
+		}
+		&.g-plus {
+			background-image: url('../img/icons/gplus.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 45%;
+			&:hover {
+				background-color: rgba(229,57,53,1);
+			}
+		}
+		&.linkedin {
+			background-image: url('../img/icons/in.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 38%;
+			&:hover {
+				background-color: #2672ae;
+			}
+		}
+		@include m(1200) {
+			width: 46px;
+			height: 46px;
+			&.facebook {
+				background-size: 20%;
+			}
+			&.twitter {
+				background-size: 43%;
+			}
+			&.g-plus {
+				background-size: 42%;
+			}
+			&.linkedin {
+				background-size: 35%;
+			}
+		}
+		@include m(1200) {
+			width: 42px;
+			height: 42px;
+		}
+		@include m(768) {
+			width: 37px;
+			height: 37px;
+		}
+	}
+}

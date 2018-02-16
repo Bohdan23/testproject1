@@ -1,6 +1,6 @@
 @import "helpers/_reset.scss";
-@import "helpers/fonts.scss";
-@import "helpers/variables.scss";
+@import "helpers/_fonts.scss";
+@import "helpers/_variables.scss";
 
 * {
 	box-sizing: border-box;
@@ -10,6 +10,16 @@ body {
 	font: 14px latoregular;
 	color: #ffffff; 
 	min-width: 320px;
+	padding-bottom: 130px;
+	@include m(1200) {
+		padding-bottom: 115px;
+	}
+	@include m(1080) {
+		padding-bottom: 105px;
+	}
+	@include m(768) {
+		padding-bottom: 90px;
+	}
 }
 
 a {
@@ -17,21 +27,21 @@ a {
 }
 
 .container {
-	width: 100%;
 	&-main {
-		border: 1px solid blue;
-
+		width: 100%;
 		max-width: 1600px;
 		margin: 0 auto;
 	}
 	&-small {
-		border: 1px solid red;
-		
+		width: 100%;
 		max-width: 1100px;
 		margin: 0 auto;
-	}
-	&-box {
-		padding: 160px 0 110px;
+		@include m(1160) {
+			padding: 0 20px;
+		}
+		@include m(480) {
+			padding: 0 10px;
+		}
 	}
 }
 
@@ -40,17 +50,34 @@ a {
 	&__wrapper {
 		height: 70px;
 	    position: absolute;
-	    display: flex;
-   		justify-content: space-between;
 	    z-index: 2;
 	    width: 100%;
 	    top: 0;
 	    left: 0;
-	    padding: 0 215px;
+	    & > .container-small {
+	    	height: 100%;
+	    	display: flex;
+   			justify-content: space-between;
+   			@include m(768) {
+				display: block;
+			}
+	    }
+	    @include m(924) {
+			height: 67px;
+		}
+		@include m(768) {
+			height: auto;
+		}
 	}
 	&__menu {
 		display: flex;
+		@include m(768) {
+			justify-content: center;
+		}	
 		li {
+			@include m(768) {
+				margin: 0 3px;
+			}
 			a {
 				font: 16px latoregular;
 				color: #fff;
@@ -61,41 +88,97 @@ a {
 			    padding: 0 20px 10px 20px;
 			    border-radius: 0 0 7px 7px;
 			    position: relative;
-			    &::after {
+			    &::after, &::before {
 			    	content: '';
 			    	display: block;
-			    	width: 100%;
 			    	height: 0;
-			    	transition: height .3s ease-in-out;
-				    border-radius: 0 0 7px 7px;
-				    position: absolute;
-				    left: 0;
-				    top: 0;
+			    	width: 0;
 				    z-index: -1;
+				    position: absolute;
+			    	transition: height .3s ease-in-out, width .3s ease-in-out;
+			    }
+			    &::before {
+			    	top: 0;
+			    	right: 0;
+			    }
+			    &::after {
+			    	bottom: 0;
+			    	left: 0;
+				    border-radius: 0 0 7px 7px;
 			    }
 			    &:hover {
-			    	&::after {
-						height: 100%;
+			    	&::after, &::before {
+						height: 50%;
+						width: 100%;
 			    	}
 			    }
-			    &.active::after {
-					height: 100%;
+			    &.active {
+			    	&::after, &::before {
+						height: 50%;
+						width: 100%;
+			    	}
 			    }
-			    &.active-sky::after {
-			    	background: $sky-nav;
+			    &.active-sky {
+			    	&::after, &::before {
+			    		background: $sky-nav;
+			    	}
 			    }
-			    &.active-red::after {
-			    	background: $red-nav;
+			    &.active-red {
+			    	&::after, &::before {
+			    		background: $red-nav;
+			    	}
 			    }
-			    &.active-green::after {
-			    	background: $green-nav;
+			    &.active-green {
+			    	&::after, &::before {
+			    		background: $green-nav;
+			    	}
 			    }
-			    &.active-violet::after {
-			    	background: $violet-nav;
+			    &.active-violet {
+			    	&::after, &::before {
+			    		background: $violet-nav;
+			    	}
 			    }
-			    &.active-blue::after {
-			    	background: $blue-nav;
+			    &.active-blue {
+			    	&::after, &::before {
+			    		background: $blue-nav;
+			    	}
 			    }
+			    @include m(924) {
+					font-size: 13px;
+					padding: 0 13px 10px 13px;
+				}
+				@include m(768) {
+					padding: 0 13px;
+					align-items: center;
+					&::after, &::before {
+						height: 2px;
+						width: 0;
+						border-radius: 8px;
+					}
+					&::after {
+						top: auto;
+						bottom: -5px;
+					}
+					&::before {
+						top: -5px;
+					}
+					&.active {
+						&::after, &::before {
+							width: 100%;
+							height: 2px;
+						}
+					}
+					&:hover {
+						&::after, &::before {
+							width: 100%;
+							height: 2px;	
+						}
+					}
+				}
+				@include m(480) {
+					font-size: 12px;
+					padding: 0 8px;
+				}
 			}
 		}
 	}
@@ -104,9 +187,25 @@ a {
 		display: flex;
 		align-items: flex-end;
 		padding-bottom: 10px;
+		@include m(924) {
+			img {
+				width: 125px;
+			}
+		}
+		@include m(768) {
+			align-items: center;
+			justify-content: center;
+			padding: 20px 0;
+		}
+		@include m(480) {
+			padding: 15px 0;
+		}
 	}
 }
 /*NAV*/
 
-@import "parts/header.scss";
+@import "parts/_header.scss";
+@import "parts/_section.scss";
+@import "parts/_footer.scss";
+@import "parts/_modal.scss";
 

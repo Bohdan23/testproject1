@@ -7,57 +7,376 @@
 	<link rel="stylesheet" href="web/css/main.css">
 </head>
 <body>
-	<!-- HEADER -->
-	<header class="header" id="header">
-		<div class="container-main">
-			<nav class="nav__wrapper">
-				<div class="nav__logo">
-					<a href="javascript:void(0)"><img src="web/img/icons/logo.png" alt="logo"></a>
+	<div class="wrapper">
+		<!-- begin HEADER -->
+		<header class="header" id="home">
+			<div class="container-main">
+				<!-- begin Navigation -->
+				<nav class="nav__wrapper wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">
+					<div class="container-small">
+						<div class="nav__logo">
+							<a href="javascript:void(0)"><img src="web/img/icons/logo.png" alt="logo"></a>
+						</div>
+						<ul class="nav__menu">
+							<li><a href="#home" class="active active-sky">Home</a></li>
+							<li><a href="#services" class="active-red">Services</a></li>
+							<li><a href="#about" class="active-violet">About</a></li>
+							<li><a href="#work" class="active-green">Work</a></li>
+							<li><a href="#contacts" class="active-blue">Contacts</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- end Navigation -->
+				<!-- begin Slider -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="web/img/slider/img.png" alt="slide">
+							<div class="slider-text">
+								<span class="slider-text__thin">GOOD IDEAS comes</span>
+								<span class="slider-text__bold">FIRST!</span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="web/img/slider/img1.png" alt="slide">
+							<div class="slider-text">
+								<span class="slider-text__thin">GOOD IDEAS comes</span>
+								<span class="slider-text__bold">FIRST!</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination wow bounceInDown" data-wow-duration="0.8s" data-wow-delay="0.6s"></div>
+				    <div class="swiper-button-prev wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s"></div>
+				    <div class="swiper-button-next wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.4s"></div>
 				</div>
-				<ul class="nav__menu">
-					<li><a href="javascript:void(0)" class="active active-sky">Home</a></li>
-					<li><a href="javascript:void(0)" class="active-red">Services</a></li>
-					<li><a href="javascript:void(0)" class="active-violet">About</a></li>
-					<li><a href="javascript:void(0)" class="active-green">Work</a></li>
-					<li><a href="javascript:void(0)" class="active-blue">Contacts</a></li>
-				</ul>
-			</nav>
-			<!-- Slider -->
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="web/img/slider/img.png" alt="slide">
-						<div class="slider-text">
-							<span class="slider-text__thin">GOOD IDEAS comes</span>
-							<span class="slider-text__bold">FIRST!</span>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="web/img/slider/img.png" alt="slide">
-						<div class="slider-text">
-							<span class="slider-text__thin">GOOD IDEAS comes</span>
-							<span class="slider-text__bold">FIRST!</span>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="web/img/slider/img.png" alt="slide">
-						<div class="slider-text">
-							<span class="slider-text__thin">GOOD IDEAS comes</span>
-							<span class="slider-text__bold">FIRST!</span>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			    <div class="swiper-button-prev"></div>
-			    <div class="swiper-button-next"></div>
+				<!-- end Slider -->
 			</div>
-			<!-- Slider -->
+		</header>
+		<!-- end HEADER -->
+
+		<!-- begin SERVICES -->
+		<section class="section-box section-services" id="services">
+			<div class="container-main">
+				<!-- begin Navigation -->
+				<nav class="nav__wrapper wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+					<div class="container-small">
+						<div class="nav__logo">
+							<a href="javascript:void(0)"><img src="web/img/icons/logo.png" alt="logo"></a>
+						</div>
+						<ul class="nav__menu">
+							<li><a href="#home" class="active-sky">Home</a></li>
+							<li><a href="#services" class="active active-red">Services</a></li>
+							<li><a href="#about" class="active-violet">About</a></li>
+							<li><a href="#work" class="active-green">Work</a></li>
+							<li><a href="#contacts" class="active-blue">Contacts</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- end Navigation -->
+				<div class="container-small">
+					<h2 class="section-box__topic wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s">Our services</h2>
+					<p class="section-box__help-text wow fadeIn" data-wow-duration="0.8s" data-wow-delay="1s"> Cras commodo mattis justo nec <a href="javasctipt:void(0)">lobortis</a>. Nam ut tellus lobortis, ullamcorper massa sit amet</p>
+					<p class="section-box__info red wow fadeInRight" data-wow-duration="0.6s" data-wow-delay="0.5s">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+					<!-- begin Cards -->
+					<div class="card__wrapper">
+						<div class="card__block wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="1s">
+							<div class="card__block-icon researching"></div>
+							<p class="card__block-topic">Researching</p>
+							<p class="card__block-descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+						</div>
+						<div class="card__block wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.6s">
+							<div class="card__block-icon design"></div>
+							<p class="card__block-topic">Design</p>
+							<p class="card__block-descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+						</div>
+						<div class="card__block wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.6s">
+							<div class="card__block-icon development"></div>
+							<p class="card__block-topic">Development</p>
+							<p class="card__block-descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+						</div>
+						<div class="card__block wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="1s">
+							<div class="card__block-icon launch"></div>
+							<p class="card__block-topic">Launch</p>
+							<p class="card__block-descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+						</div>
+					</div>
+					<!-- end Cards -->
+				</div>
+			</div>
+		</section>
+		<!-- end SERVICES -->
+
+		<!-- begin WHO WE ARE -->
+		<section class="section-box section-about" id="about">
+			<div class="container-main">
+				<!-- begin Navigation -->
+				<nav class="nav__wrapper wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+					<div class="container-small">
+						<div class="nav__logo">
+							<a href="javascript:void(0)"><img src="web/img/icons/logo.png" alt="logo"></a>
+						</div>
+						<ul class="nav__menu">
+							<li><a href="#home" class="active-sky">Home</a></li>
+							<li><a href="#services" class="active-red">Services</a></li>
+							<li><a href="#about" class="active active-violet">About</a></li>
+							<li><a href="#work" class="active-green">Work</a></li>
+							<li><a href="#contacts" class="active-blue">Contacts</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- end Navigation -->
+				<div class="container-small">
+					<h2 class="section-box__topic wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">Who we are & what we do</h2>
+					<p class="section-box__info violet wow fadeInRight" data-wow-duration="0.6s" data-wow-delay="0.5s">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+					<span class="section-box__tooltip wow fadeIn" data-wow-duration="0.8s" data-wow-delay="1s">Meet the team</span>
+					<!-- begin Cards -->
+					<div class="card__wrapper">
+						<div class="card__block wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="1s">
+							<div class="card__block-icon user"></div>
+							<p class="card__block-name">Roger Federer</p>
+							<p class="card__block-position">General manager</p>
+							<div class="card__block-social">
+								<a href="javascript:void(0)" class="facebook"></a>
+								<a href="javascript:void(0)" class="twitter"></a>
+								<a href="javascript:void(0)" class="g-plus"></a>
+								<a href="javascript:void(0)" class="in"></a>
+							</div>
+						</div>
+						<div class="card__block wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.6s">
+							<div class="card__block-icon user"></div>
+							<p class="card__block-name">John McEnroe</p>
+							<p class="card__block-position">Design manager</p>
+							<div class="card__block-social">
+								<a href="javascript:void(0)" class="facebook"></a>
+								<a href="javascript:void(0)" class="twitter"></a>
+								<a href="javascript:void(0)" class="g-plus"></a>
+								<a href="javascript:void(0)" class="in"></a>
+							</div>
+						</div>
+						<div class="card__block wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.6s">
+							<div class="card__block-icon user"></div>
+							<p class="card__block-name">Andy Murray</p>
+							<p class="card__block-position">Developer ninja</p>
+							<div class="card__block-social">
+								<a href="javascript:void(0)" class="facebook"></a>
+								<a href="javascript:void(0)" class="twitter"></a>
+								<a href="javascript:void(0)" class="g-plus"></a>
+								<a href="javascript:void(0)" class="in"></a>
+							</div>
+						</div>
+						<div class="card__block wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="1s">
+							<div class="card__block-icon user"></div>
+							<p class="card__block-name">Stan Wawrinka</p>
+							<p class="card__block-position">SEO guru</p>
+							<div class="card__block-social">
+								<a href="javascript:void(0)" class="facebook"></a>
+								<a href="javascript:void(0)" class="twitter"></a>
+								<a href="javascript:void(0)" class="g-plus"></a>
+								<a href="javascript:void(0)" class="in"></a>
+							</div>
+						</div>
+					</div>
+					<!-- end Cards -->
+				</div>
+			</div>
+		</section>
+		<!-- end WHO WE ARE -->
+
+		<!-- begin PORTFOLIO -->
+		<section class="section-box section-portfolio" id="work">
+			<div class="container-main">
+				<!-- begin Navigation -->
+				<nav class="nav__wrapper wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+					<div class="container-small">
+						<div class="nav__logo">
+							<a href="javascript:void(0)"><img src="web/img/icons/logo.png" alt="logo"></a>
+						</div>
+						<ul class="nav__menu">
+							<li><a href="#home" class="active-sky">Home</a></li>
+							<li><a href="#services" class="active-red">Services</a></li>
+							<li><a href="#about" class="active-violet">About</a></li>
+							<li><a href="#work" class="active active-green">Work</a></li>
+							<li><a href="#contacts" class="active-blue">Contacts</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- end Navigation -->
+				<div class="container-small">
+					<h2 class="section-box__topic wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">Our work</h2>
+					<p class="section-box__info wow fadeInRight" data-wow-duration="0.6s" data-wow-delay="0.5s">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+					<div class="portfolio__header wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0.5s">
+						<span class="portfolio__topic">Portfolio</span>
+						<div class="portfolio__choose">
+							<a href="javascript:void(0)" class="portfolio__choose-btn active" data-filter="all">All</a>
+							<a href="javascript:void(0)" class="portfolio__choose-btn" data-filter=".category-photography">Photography</a>
+							<a href="javascript:void(0)" class="portfolio__choose-btn" data-filter=".category-logo">Logo design</a>
+							<a href="javascript:void(0)" class="portfolio__choose-btn" data-filter=".category-web">Web design</a>
+						</div>
+					</div>
+					<div class="portfolio__wrapper">
+						<div class="portfolio__project mix category-photography wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.1s" data-myorder="1">
+							<div class="portfolio__project-photo">
+								<img src="web/img/portfolio/layer11.png" alt="photo">
+							</div>
+							<div class="portfolio__project-description">
+								<span class="project-caption">Aenean a elit</span>
+							</div>
+						</div>
+						<div class="portfolio__project mix category-web wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.1s" data-myorder="2">
+							<div class="portfolio__project-photo">
+								<img src="web/img/portfolio/layer22.png" alt="photo">
+							</div>
+							<div class="portfolio__project-description">
+								<span class="project-caption">Aliquam</span>
+							</div>
+						</div>
+						<div class="portfolio__project mix category-logo wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.1s" data-myorder="3">
+							<div class="portfolio__project-photo">
+								<img src="web/img/portfolio/layer33.png" alt="photo">
+							</div>
+							<div class="portfolio__project-description">
+								<span class="project-caption">Suspendisse libero</span>
+							</div>
+						</div>
+						<div class="portfolio__project mix category-web category-logo wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.1s" data-myorder="4">
+							<div class="portfolio__project-photo">
+								<img src="web/img/portfolio/layer44.jpg" alt="photo">
+							</div>
+							<div class="portfolio__project-description">
+								<span class="project-caption">Maecenas fringilla</span>
+							</div>
+						</div>
+						<div class="portfolio__project mix category-logo wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.1s" data-myorder="5">
+							<div class="portfolio__project-photo">
+								<img src="web/img/portfolio/layer55.jpg" alt="photo">
+							</div>
+							<div class="portfolio__project-description">
+								<span class="project-caption">Donec vehicula</span>
+							</div>
+						</div>
+						<div class="portfolio__project mix category-photography wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.1s" data-myorder="6">
+							<div class="portfolio__project-photo">
+								<img src="web/img/portfolio/layer66.jpeg" alt="photo">
+							</div>
+							<div class="portfolio__project-description">
+								<span class="project-caption">Ut et sapien</span>
+							</div>
+						</div>
+						<div class="portfolio__project mix category-logo wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.1s" data-myorder="7">
+							<div class="portfolio__project-photo">
+								<img src="web/img/portfolio/layer77.png" alt="photo">
+							</div>
+							<div class="portfolio__project-description">
+								<span class="project-caption">Quis malesuada</span>
+							</div>
+						</div>
+						<div class="portfolio__project mix category-web category-photography wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.1s" data-myorder="8">
+							<div class="portfolio__project-photo">
+								<img src="web/img/portfolio/layer88.png" alt="photo">
+							</div>
+							<div class="portfolio__project-description">
+								<span class="project-caption">Vestibulum ante</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end PORTFOLIO -->
+
+		<!-- begin CONTACTS -->
+		<section class="section-box section-contacts" id="contacts">
+			<div class="container-main">
+				<!-- begin Navigation -->
+				<nav class="nav__wrapper wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+					<div class="container-small">
+						<div class="nav__logo">
+							<a href="javascript:void(0)"><img src="web/img/icons/logo.png" alt="logo"></a>
+						</div>
+						<ul class="nav__menu">
+							<li><a href="#home" class="active-sky">Home</a></li>
+							<li><a href="#services" class="active-red">Services</a></li>
+							<li><a href="#about" class="active-violet">About</a></li>
+							<li><a href="#work" class="active-green">Work</a></li>
+							<li><a href="#contacts" class="active active-blue">Contacts</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- end Navigation -->
+				<div class="container-small">
+					<h2 class="section-box__topic wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">Contact us</h2>
+					<p class="section-box__info wow fadeInRight" data-wow-duration="0.6s" data-wow-delay="0.5s">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+					<div class="contact__wrapper">
+						<div class="contact__side wow bounceInLeft" data-wow-duration="0.8s" data-wow-delay="0.8s">
+							<p class="contact__title">Adress</p>
+							<div class="contact__side-box">
+								<p class="contact__side-topic">Acrostia</p>
+								<p class="contact__side-location">
+									Sevenoaks Rd<br>
+									Sevenoaks TN14 7HR, UK
+								</p>
+								<p class="contact__side-contact-info">
+									<span>Phone:</span>
+									<a href="tel:+44000000000">+44 000 000 000</a>
+								</p>
+								<p class="contact__side-contact-info">
+									<span>Fax:</span>
+									<a href="tel:+44000000000">+44 000 000 000</a>
+								</p>
+								<p class="contact__side-contact-info">
+									<span>E-mail:</span>
+									<a href="mailto:info@email.com">info@email.com</a>
+								</p>
+								<p class="contact__side-contact-info">
+									<span>Skype:</span>
+									<a href="skype:Acst000">Acst000</a>
+								</p>
+							</div>
+							<div class="contact__side-box">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24670.860071545645!2d-0.12250217952583102!3d51.50842668111964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1518290891738" allowfullscreen class="contact__side-gmaps"></iframe>
+							</div>
+						</div>
+						<div class="contact__side wow bounceInRight" data-wow-duration="0.8s" data-wow-delay="0.8s">
+							<p class="contact__title">Ask a question</p>
+							<form action="javascript:void(0)" class="contact__side-form">
+								<input type="text" placeholder="Name">
+								<input type="email" placeholder="Email">
+								<textarea name="message" placeholder="Your question"></textarea>
+								<input type="submit" value="Send">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end CONTACTS -->
+	</div>
+
+	<!-- begin FOOTER -->
+	<footer class="footer">
+		<div class="footer-nav">
+			<a href="javascript:void(0)" class="facebook"></a>
+			<a href="javascript:void(0)" class="twitter"></a>
+			<a href="javascript:void(0)" class="g-plus"></a>
+			<a href="javascript:void(0)" class="linkedin"></a>
 		</div>
-	</header>
-	<!-- HEADER -->
+	</footer>
+	<!-- end  FOOTER -->
+
+	<!-- begin MODAL -->
+	<div class="modal-wrapper">
+		<div class="modal-box">
+			<img src="javascript:void(0)" alt="image" class="modal-content">
+			<span class="modal-caption"></span>
+		</div>
+		<span class="modal-close">&times;</span>
+	</div>
+	<!-- end MODAL -->
 
 	<script src="web/js/vendor/jquery-2.1.1.min.js"></script>
 	<script src="web/js/vendor/swiper.min.js"></script>
+	<script src="web/js/vendor/wow.min.js"></script>
+	<script src="web/js/mixitup.js"></script>
 	<script src="web/js/index.js"></script>
 </body>
 </html>

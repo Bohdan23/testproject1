@@ -60,7 +60,8 @@ gulp.task('fonts:build', function () {
 gulp.task('libsjs:build', function () {
     return gulp.src([
         'node_modules/swiper/dist/js/swiper.min.js',
-        'node_modules/jquery/dist/cdn/jquery-2.1.1.min.js'
+        'node_modules/jquery/dist/cdn/jquery-2.1.1.min.js',
+        'node_modules/wowjs/dist/wow.min.js'
         ])
         .pipe(gulp.dest(path.web.libsjs))
 });
@@ -70,6 +71,13 @@ gulp.task('libscss:build', function () {
         'node_modules/swiper/dist/css/swiper.min.css'
         ])
         .pipe(gulp.dest(path.web.libscss))
+});
+
+gulp.task('libssass:build', function () {
+    return gulp.src([
+        'node_modules/css-reset-and-normalize-sass/scss/imports/_reset.scss'
+        ])
+        .pipe(gulp.dest('src/sass/helpers/'))
 });
 
 gulp.task('libs:build', gulp.series([
@@ -89,6 +97,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('proj:build', gulp.series([
+    'libssass:build',
     'clean',
     'style:build',
     'js:build',
