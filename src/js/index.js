@@ -44,7 +44,9 @@ $(document).ready(function () {
     // Modal window
 
 
-    $('.nav__menu').on('click', 'a', function(){
+    $('.nav__menu').on('click', 'a', function(e){
+        e.preventDefault();
+
 		var idSection = $(this).attr('href'),
 			topOfSection = $(idSection).offset().top;
 
