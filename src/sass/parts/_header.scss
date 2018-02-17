@@ -139,6 +139,15 @@
     	@include m(768) {
 			padding: 10px;
 		}
+		&.theme-wood {
+			color: #4d332a;
+		}
+		&.theme-brown {
+			color: #3e3724;
+		}
+		&.theme-grey {
+			color: #343b41;
+		}
 	    &__thin {
 	    	font: 46px latolight;
 	    	width: 290px;

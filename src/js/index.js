@@ -9,7 +9,7 @@ $(document).ready(function () {
 			prevEl: '.swiper-button-prev',
 		},
 		speed: 900,
-        autoplay: false
+        autoplay: true
     });
 
     // Portfolio images
@@ -76,8 +76,5 @@ $(document).ready(function () {
     });
     // End MixItUp jquery plugin
 
-    wow = new WOW({
-        mobile: false
-    })
-    wow.init();
+    new WOW().init();
 });
